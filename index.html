@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap">
+    <title>Document</title>
+    <style>
+        body{
+            color:white;
+            margin:0px;
+            padding:0px;
+            background:url("img/abs-1850926.jpg");
+            background-size: 190%;
+            font-family: 'Baloo Bhai', cursive;
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left:34px;
+            top:20px;
+
+        }
+        .left img{
+            width: 103px;
+            filter:invert(100%);
+        }
+        .left div{
+            text-align:center;
+            line-height: 0px;
+            font-size:20px;
+        }
+        .mid{
+            display: block;
+            margin:29px auto;
+            width:37%;
+            
+        }
+        .right{
+            display: inline-block;
+            position:absolute;
+            right:34px;
+            top:30px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 16px;
+        }
+        .navbar li a{
+            color:white;
+            text-decoration: none;
+            padding: 23px;
+        }
+        .navbar li a:hover , .navbar li a:active{
+            text-decoration: underline;
+            color:gray;
+        }
+        .btn{
+            background-color: black;
+            color:white;
+            margin:0px 9px;
+            padding:4px 14px;
+            border: 2px solid gray;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size:20px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+        .btn:hover{
+            background-color: rgb(46, 40, 40);
+        }
+        .conatiner{
+            border:2px solid white;
+            margin:68px 80px;
+            padding:52px;
+            width:33%;
+            border-radius: 28px;;
+        }
+        .form-group input {
+            text-align:center;
+            display: block;
+            width:395px;
+            margin: 11px auto;
+            padding: 1px;
+            font-size:25px;
+            border: 2px solid black;
+            border-radius: 10px;;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .conatiner h2{
+            text-align:center;
+        }
+        .conatiner button{
+            display: block;
+            width:80%;
+            margin:20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+           <img src="img/download.jpg" alt="">
+           <div>Ravi Fitness</div>
+        </div>
+        <!-- left box for navbar -->
+        <div class="mid">
+          <navbar class="navbar">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FitnessCalculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+          </navbar>
+        </div>
+        <!-- left box for buttons -->
+        <div class="right">
+          <button class="btn">Contact Us</button>
+          <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="conatiner">
+          <h2>Join the best gym of bangalure now</h2>
+          <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+          </form>
+    </div>
+</body>
+</html>
